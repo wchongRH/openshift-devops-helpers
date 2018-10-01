@@ -10,7 +10,7 @@ WARNING: These scripts were built for specific environments to make use of JIRA 
 
 == Usage
 
-<tbd>
+<https://docs.google.com/document/d/1JsxA-b9yviFw2-9GVB-3pXp4NYgdarkydOCCdFBiBGs/edit>
 
 == Contribution guidelines
 * Tests
