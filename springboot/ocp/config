@@ -1,23 +1,15 @@
-#
-# Project configuration
-
-# openshift project user, set this to grant edit rights to the project
-#ENV_USER=
-
 # openshift cli options
-OPENSHIFT_CLI_OPTIONS="--request-timeout=30"
+OPENSHIFT_CLI_OPTIONS="--request-timeout=700"
+OPENSHIFT_CLI_EXT_REG_OPTIONS="--request-timeout=1000"
+LOGS_DIR=logs
+#build cluster
+CLUSTER_BUILD=
 
-# build cluster
-CLUSTER_BUILD=https://openshift-dev-master.example.internal 
+#deploy cluster
+CLUSTER_DEPLOY=$CLUSTER_BUILD
 
-# deploy cluster
-CLUSTER_DEPLOY=https://openshift-dev-master.example.internal
+#image registry
+EXT_REG=
 
-# production cluster
-CLUSTER_PRODUCTION=https://master.ocp.example.internal
-
-# dr cluster
-CLUSTER_DR=https://master.ocp.example.internal
-
-# image registry
-EXT_REG=docker-registry-default.apps.rhelocp-dev.example.internal:443
+# environment user
+ENV_USER=
